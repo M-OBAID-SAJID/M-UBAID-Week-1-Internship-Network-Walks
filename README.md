@@ -46,8 +46,6 @@ ping -c 4 google.com
 - Understanding default gateways and DNS.
 - Practicing basic Linux network troubleshooting.
 
-## 📸 Screenshots
-Add screenshots of your VirtualBox network settings, IP configuration, routing table, and connectivity tests here.
 
 ## ✅ Conclusion
 Successfully practiced Linux virtual machine setup and fundamental networking configuration as part of my Week 01 remote internship task.
