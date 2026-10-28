@@ -1,36 +1,100 @@
 
 # 🐧 Linux Network Configuration Lab
 
-### Week 01 | Network Walks IT Trainers Internship
+### Week 01 — Network Walks IT Trainers Internship
 
-![Linux](https://img.shields.io/badge/Linux-OS-FCC624?style=flat&logo=linux&logoColor=black)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-Virtualization-183A61?style=flat&logo=virtualbox)
-![Networking](https://img.shields.io/badge/Networking-Fundamentals-blue?style=flat)
+![Linux](https://img.shields.io/badge/OS-Kali_Linux-FCC624?style=for-the-badge&logo=kalilinux&logoColor=black)
+![VirtualBox](https://img.shields.io/badge/Virtualization-VirtualBox-183A61?style=for-the-badge&logo=virtualbox)
+![Networking](https://img.shields.io/badge/Domain-Networking-0A66C2?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-2EA44F?style=for-the-badge)
 
-## 📌 Overview
-This lab involved setting up a Linux virtual machine in Oracle VirtualBox, configuring a manual IPv4 address, enabling NAT networking, and testing internet connectivity.
+> **Project Overview:** Setting up Kali Linux in VirtualBox, configuring a manual IPv4 address, enabling NAT networking, and checking internet connectivity.
 
-## 🎯 Objectives
-- Set up Linux in VirtualBox.
-- Configure a manual IP address in the `10.0.0.0/24` subnet.
+---
+
+## 📌 1. Overview
+
+This lab was completed as part of my first-week task during the **Network Walks IT Trainers remote internship**.
+
+The objective was to set up Kali Linux in Oracle VirtualBox, configure a manual IP address within the `10.0.0.0/24` subnet, configure NAT networking, and test network connectivity.
+
+## 🎯 2. Objectives
+
+- Install and configure Kali Linux in VirtualBox.
+- Assign a manual IPv4 address.
 - Configure NAT networking.
-- Verify internet connectivity.
+- Understand IP addressing, gateways, and DNS.
+- Test internet connectivity.
 
-## 🛠️ Tools Used
+## 🧰 3. Tools & Technologies
+
 - Kali Linux
-- Oracle VirtualBox
+- Oracle VM VirtualBox
+- IPv4 Addressing
+- NAT Networking
 - Linux Terminal
-- IPv4, NAT, and DNS
 
-## ⚙️ Implementation Steps
+---
 
-1. **Install Linux:** Created and started a Linux virtual machine in VirtualBox.
-2. **Configure Networking:** Enabled the virtual network adapter and selected NAT mode.
-3. **Assign IP Address:** Configured a manual IPv4 address within the required subnet.
-4. **Check Configuration:** Used Linux commands to inspect the network interface and routing table.
-5. **Test Connectivity:** Tested external IP connectivity and DNS resolution.
+## ⚙️ 4. Step-by-Step Implementation
 
-## 💻 Verification Commands
+### Step 1 — Kali Linux Setup
+
+Created and started the Kali Linux virtual machine.
+
+![Kali Linux Desktop](Desktop.png)
+
+![Kali Linux Login](Login.png)
+
+### Step 2 — VirtualBox Network Configuration
+
+Reviewed the virtual machine's network settings to prepare the networking environment.
+
+![VirtualBox Network Settings](Network.png)
+
+### Step 3 — Manual IP Configuration
+
+Configured the manual IPv4 address within the required subnet.
+
+![Manual IP Configuration](Conf.%20IP.png)
+
+The recorded network configuration was:
+
+| Parameter | Value |
+|---|---|
+| IPv4 Address | `10.0.0.2` |
+| Subnet Prefix | `/24` |
+| Subnet Mask | `255.255.255.0` |
+| Gateway | `10.0.0.1` |
+| DNS Server | `10.0.0.1` |
+
+### Step 4 — Network Connection Verification
+
+Reviewed the network connection details to check the assigned address and connection settings.
+
+![Network Connection Details](Ethernet%20setting.png)
+
+![Network Access](Net%20access.png)
+
+### Step 5 — VirtualBox Management
+
+Reviewed the VirtualBox environment and virtual machine management settings.
+
+![VirtualBox Manager](Drag%20%26%20Drop.png)
+
+### Step 6 — Shared Folder Configuration
+
+Reviewed shared-folder settings in VirtualBox.
+
+![Shared Folder Settings](Shared%20Folder.png)
+
+![Additional Shared Folder Settings](Shared%20Folder%202.png)
+
+---
+
+## 💻 5. Network Verification Commands
+
+The following Linux commands can be used to inspect network settings and test connectivity.
 
 ```bash
 ip addr
@@ -40,16 +104,35 @@ ping -c 4 8.8.8.8
 ping -c 4 google.com
 ```
 
-## 🎓 Learning Outcomes
+- `ip addr` — Displays network interfaces and IP addresses.
+- `ip route` — Displays the routing table.
+- `cat /etc/resolv.conf` — Displays DNS resolver settings.
+- `ping` — Tests network reachability.
+
+> **Note:** Run these commands and document their actual output. The provided screenshots do not independently confirm successful internet access.
+
+## 📚 6. Learning Outcomes
+
 - Understanding IPv4 addressing and CIDR notation.
-- Learning how NAT provides network access to virtual machines.
+- Configuring manual IP settings in Kali Linux.
+- Learning the purpose of NAT networking.
 - Understanding default gateways and DNS.
-- Practicing basic Linux network troubleshooting.
+- Practicing basic network troubleshooting.
 
+## 🛡️ 7. Cybersecurity Relevance
 
-## ✅ Conclusion
-Successfully practiced Linux virtual machine setup and fundamental networking configuration as part of my Week 01 remote internship task.
+Linux networking is a fundamental skill in cybersecurity. Understanding IP addresses, routing, DNS, and network connectivity helps prepare for future network analysis and security testing labs.
+
+## ✅ 8. Conclusion
+
+This lab provided practical experience with Kali Linux, VirtualBox, manual IPv4 configuration, and fundamental networking concepts.
+
+It established a foundation for further learning in Linux administration, network troubleshooting, and cybersecurity.
 
 ---
-**Program:** Network Walks IT Trainers Internship  
-**Task:** Week 01 — Linux Network Configuration
+
+### 👨‍💻 Internship Portfolio
+
+**Program:** Network Walks IT Trainers — Remote Internship  
+**Week:** 01  
+**Task:** Linux Installation and Network Configuration
